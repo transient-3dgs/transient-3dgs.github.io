@@ -150,15 +150,13 @@
             for 3D scene reconstruction using Gaussian Splatting.
           </p>
           <p>
-            Our framework consists of two main steps.
-            First, we propose an unsupervised training strategy for a classification
-            network that distinguishes transient objects from static scene elements by
-            leveraging their distinct training behavior within the 3D Gaussian Splatting reconstruction.
+            Our framework consists of two steps.
+            First, we employ an unsupervised classification network that distinguishes transient objects from static scene elements
+            by leveraging their distinct training dynamics within the reconstruction process.
           </p>
           <p>
-            Second, we enhance boundary quality and temporal coherence by combining our initial detections
-            with an off-the-shelf segmentation method, while implementing a simple yet effective bidirectional
-            tracking approach for objects throughout the input video.
+            Second, we refine these initial detections by integrating an off-the-shelf segmentation method with a bidirectional tracking
+            module, which together enhance boundary accuracy and temporal coherence.
           </p>
         </div>
         <img src="static/images/pipeline.png" class="img-responsive" alt="overview" width="120%" style="max-height: 450px;margin:auto;">
